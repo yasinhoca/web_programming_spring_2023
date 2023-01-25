@@ -15,8 +15,8 @@ NodeJs işlemleri ise ilgili hafta geldiğinde açıklanacaktır.
 Vize : 100 puanlık test sınavı
 Final (Bütünleme) : 25 Puanlık sınav + 25 puan haftalık ödevler + 50 puan proje
 
---- Müfredat Ana Başlıklar ---
--Temel Web Tasarım
+--- Müfredat Ana Başlıklar ---<br>
+-Temel Web Tasarım<br>
 -PHP çalışma ortamının hazırlanması
 -PHP ile temel programlama 
 -PHP ile veritabanı işlemleri
