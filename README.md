@@ -17,13 +17,13 @@ Final (Bütünleme) : 25 Puanlık sınav + 25 puan haftalık ödevler + 50 puan 
 
 --- Müfredat Ana Başlıklar ---<br>
 -Temel Web Tasarım<br>
--PHP çalışma ortamının hazırlanması
--PHP ile temel programlama 
--PHP ile veritabanı işlemleri
--PHP+Mysql+Bootstrap ile web uygulamaları
--Laravel ve CodeIgniter MVC temel bilgiler
--NodeJs kurulum
--Nodejs temel bilgiler, paketler
--Nodejs + NoSql veritabanı bağlantısı
--Frontend için JS frameworkleri (react, vue, angular vb.)
-*** Müfredat öğrencinin hazırbulunuşluğuna, reaksiyonuna ve ritmine göre değişebilir
+-PHP çalışma ortamının hazırlanması<br>
+-PHP ile temel programlama<br> 
+-PHP ile veritabanı işlemleri<br>
+-PHP+Mysql+Bootstrap ile web uygulamaları<br>
+-Laravel ve CodeIgniter MVC temel bilgiler<br>
+-NodeJs kurulum<br>
+-Nodejs temel bilgiler, paketler<br>
+-Nodejs + NoSql veritabanı bağlantısı<br>
+-Frontend için JS frameworkleri (react, vue, angular vb.)<br>
+*** Müfredat öğrencinin hazırbulunuşluğuna, reaksiyonuna ve ritmine göre değişebilir<br>
