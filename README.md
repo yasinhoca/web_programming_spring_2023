@@ -12,7 +12,7 @@ Kodlama için herhangi bir IDE kullanılabilir. Derste PHPStorm, WebStorm ve VSC
 Php için Wamp Server programının kurulması gerecektir.<br>
 NodeJs işlemleri ise ilgili hafta geldiğinde açıklanacaktır.<br>
 
-Vize : 100 puanlık test sınavı
+Vize : 100 puanlık test sınavı<br>
 Final (Bütünleme) : 25 Puanlık sınav + 25 puan haftalık ödevler + 50 puan proje
 
 --- Müfredat Ana Başlıklar ---<br>
