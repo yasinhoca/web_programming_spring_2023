@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Formu</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica,sans-serif;
+        }
+        form{
+            border: 3px solid #f1f1f1;
+        }
+        input[type="text"], input[type="password"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+        button{
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover{
+            opacity: 0.8;
+        }
+
+        .cancelbtn{
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .container{
+            padding: 16px;
+        }
+
+        span.psw{
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Çok küçük ekranlarda responsive davranmayı engelleyelim
+         */
+
+        @media screen and (max-width:300px){
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<h2> Giriş Formu </h2>
+<form action="/kullanici.php" method="post">
+    <div class="container">
+        <label for="uname"><b>Kullanıcı Adı</b></label><br>
+        <input type="text" placeholder="Kullanıcı adını giriniz" name="uname" required><br>
+        <label for="psw"><b>Şifre</b></label><br>
+        <input type="password" placeholder="Şifreyi giriniz" name="psw" required><br>
+        <button type="submit">Giriş</button><br>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Oturum açık kalsın
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="submit" class="cancelbtn">İptal</button><br>
+        <span class="psw">Şifremi <a href="#">unuttum</a></span>
+    </div>
+</form>
+
+</body>
+</html>
