@@ -1,89 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>JS Hesap Makinesi</title>
-    <style>
-      h2{
-        text-align: center;
-        padding: 23px;
-        background-color: azure;
-        color: black;
-      }
+  <meta charset="UTF-8">
+  <title>JS Hesap Makinesi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      color: #fff;
+    }
 
-      #clear{
-        width:250px;
-        border: 3px solid gray;
-        border-radius: 3px;
-        padding: 20px;
-        background-color: #f44336;
-      }
+    body {
+      position: relative;
+      height: 100vh;
+    }
 
-      .formstyle{
-        width: 250px;
-        height: 530px;
-        margin: auto;
-        border: 3px solid skyblue;
-        border-radius: 20px;
-        padding: 20px;
-      }
+    button {
+      border: none;
+    }
 
-      input{
-        width: 20px;
-        background-color: cadetblue;
-        color: black;
-        border: 3px solid gray;
-        border-radius: 5px;
-        padding: 26px;
-        margin: 5x;
-        font-size: 18px;
-        font-weight: bold;
-      }
+    h2 {
+      text-align: center;
+      padding: 23px;
+      background-color: azure;
+      color: black;
+      font-family: sans-serif
+    }
 
-      #calc{
-        width: 200px;
-        border: 5px solid black;
-        border-radius: 5px;
-        padding: 20px;
-        margin: auto;
-        background-color: #a0caaf;
-      }
+    button#calculate {
+      background-color: #76b9ed;
+      color: #202020;
+      letter-spacing: -5px;
+      font-weight: 500;
+    }
 
-    </style>
+    #calculate:hover {
+      background: #6da9d8;
+    }
+
+    #calculate:active {
+      background: #649ac3;
+    }
+
+    .formstyle {
+      position: relative;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      padding: 3px;
+      width: fit-content;
+      background: #202020;
+      width: 340px;
+      height: 520px;
+    }
+
+    .row {
+      display: flex;
+      height: 100%;
+      flex-basis: 1;
+      margin: 2px 0;
+    }
+
+    .text-large {
+      font-size: 24px;
+    }
+
+    .row>button {
+      width: 100%;
+      background: #323232;
+      border: none;
+      margin: 0 2px;
+      border-radius: 5px;
+      font-weight: 100;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .row>button:hover {
+      background: #3c3c3c;
+    }
+
+    .row>button:active {
+      background: #323232;
+    }
+
+    .row input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #3c3c3c;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 2px;
+      border: none;
+    }
+
+    .row>input:hover {
+      background: #323232;
+    }
+
+    .row>input:active {
+      background: #282828;
+    }
+
+    #calc {
+      border: none;
+      margin: auto;
+      background: transparent;
+      text-align: end;
+      font-size: 42px;
+      width: 100%;
+      caret-color: transparent;
+      padding: 32px 0;
+      margin-top: 60px;
+      padding-right: 20px !important;
+    }
+
+    #calc:focus {
+      border-color: red;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 100%;
+    }
+
+    form .nav-calc {
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    form .nav-calc img {
+      height: 15px;
+      margin: 0 15px;
+    }
+
+    button#backspace>img {
+      height: 24px;
+    }
+
+    .icon-equal {
+      border-top: 2px solid #333;
+      border-bottom: 2px solid #333;
+      height: 7px;
+      width: 15px;
+      margin: auto;
+      margin-top: 2px;
+    }
+  </style>
 
 
 </head>
+
 <body>
-<h2> Hesap Makinesi</h2>
-<div class="formstyle">
-  <form name="form1">
-    <input id="calc" type="text" name="answer"></input><br><br>
-    <input type="button" value="1" onclick="form1.answer.value +='1'">
-    <input type="button" value="2" onclick="form1.answer.value +='2'">
-    <input type="button" value="3" onclick="form1.answer.value +='3'">
-    <input type="button" value="+" onclick="form1.answer.value +='+'">
-    <br><br>
-    <input type="button" value="4" onclick="form1.answer.value +='4'">
-    <input type="button" value="5" onclick="form1.answer.value +='5'">
-    <input type="button" value="6" onclick="form1.answer.value +='6'">
-    <input type="button" value="-" onclick="form1.answer.value +='-'">
-    <br><br>
-    <input type="button" value="7" onclick="form1.answer.value +='7'">
-    <input type="button" value="8" onclick="form1.answer.value +='8'">
-    <input type="button" value="9" onclick="form1.answer.value +='9'">
-    <input type="button" value="*" onclick="form1.answer.value +='*'">
-    <br><br>
-    <input type="button" value="0" onclick="form1.answer.value +='0'">
-    <input type="button" value="." onclick="form1.answer.value +='.'">
-    <input type="button" value="=" onclick= "form1.answer.value= eval(form1.answer.value)" >
-    <input type="button" value="/" onclick="form1.answer.value +='/'">
-    <br><br>
-    <input type="button" value="C" onclick="form1.answer.value=''" id="clear">
-    <br>
-  </form>
+  <h2> Hesap Makinesi</h2>
+  <div class="formstyle">
+    <form name="form1">
+      <div class="nav-calc">
+        <img src="assets/img/calc.png" alt=""><span>Calculator</span>
+      </div>
+      <input id="calc" type="text" name="answer">
+      <div class="row">
+        <button type="button" onclick="form1.answer.value +='%'">%</button>
+        <button type="button" onclick="form1.answer.value = ''">CE</button>
+        <button type="button" onclick="form1.answer.value = ''">C</button>
+        <button type="button" onclick="form1.answer.value = form1.answer.value.slice(0,-1)" id="backspace"><img
+            src="assets/img/backspace-icon.png" alt=""></button>
+      </div>
+      <div class="row"><br><br>
+        <button onclick="oneOver(form1.answer.value)" type="button">1/x</button>
+        <button type="button" onclick="form1.answer.value = Math.pow(form1.answer.value,2)">x²</button>
+        <button type="button" onclick="form1.answer.value = Math.sqrt(form1.answer.value)">²√</button>
+        <button class="text-large" type="button" value="÷" onclick="form1.answer.value +='/'">÷</button>
+      </div>
+      <div class="row"><br><br>
+        <input type="button" value="7" onclick="form1.answer.value +='7'">
+        <input type="button" value="8" onclick="form1.answer.value +='8'">
+        <input type="button" value="9" onclick="form1.answer.value +='9'">
+        <button class="text-large" type="button" value="X" onclick="form1.answer.value +='*'">x</button>
+      </div>
+      <div class="row">
+        <input type="button" value="4" onclick="form1.answer.value +='4'">
+        <input type="button" value="5" onclick="form1.answer.value +='5'">
+        <input type="button" value="6" onclick="form1.answer.value +='6'">
+        <button class="text-large" type="button" value="-" onclick="form1.answer.value +='-'">-</button>
+      </div>
+      <div class="row">
+        <input type="button" value="1" onclick="form1.answer.value +='1'">
+        <input type="button" value="2" onclick="form1.answer.value +='2'">
+        <input type="button" value="3" onclick="form1.answer.value +='3'">
+        <button class="text-large" type="button" value="+" onclick="form1.answer.value +='+'">+</button>
+      </div>
+      <div class="row">
+        <input type="button" value="+/-" onclick="changeSign(form1.answer.value)">
+        <input type="button" value="0" onclick="form1.answer.value +='0'">
+        <input type="button" value="." onclick="form1.answer.value +='.'">
+        <button id="calculate" type="button" onclick="calculatex(form1.answer.value)">
+          <div class="icon-equal"></div>
+        </button>
+      </div>
+    </form>
 
-</div>
+  </div>
 
+  <script>
+    let changeSign = number => {
+      if (number > 0) {
+        form1.answer.value = "-" + number;
+      } else if (number < 0) {
+        form1.answer.value = number.substring(1)
+      }
+    }
 
+    let percentage = (number) => {
+      let arr = number.split("%")
+    }
+
+    let backspace = (number) => {
+      form1.answer.value = number.slice(0, -1)
+    }
+
+    let oneOver = (number) => {
+      form1.answer.value = 1 / (number)
+    }
+
+    let calculatex = (number) => {
+      console.log("asd")
+      if (number.includes("%")) {
+        let arr = number.split("%");
+        if (arr.length == 2) {
+          form1.answer.value = eval(arr[0]) * eval(arr[1]) / 100;
+        } else {
+          form1.answer.value = 0;
+        }
+      } else {
+        form1.answer.value = eval(form1.answer.value);
+      }
+    }
+
+  </script>
 </body>
+
 </html>
