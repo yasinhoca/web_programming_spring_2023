@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+  <style>
+    body{
+      text-align: center;
+      font-size: 20px;
+    }
+    #d{
+      margin: auto;
+      padding: 3px;
+      width: 300px;
+      height: 300px;
+      border: 3px solid gray;
+      border-radius: 5px;
+      background: aqua;
+    }
+    #b{
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<h2>Switch Button</h2>
+
+<div id="d"></div>
+<br>
+<button onclick="degistir()" id="b">GECE</button>
+
+<script>
+  var durum;
+  durum = 0;
+  function degistir(){
+    if(durum==0){
+      document.getElementById("d").style.background="navy";
+      document.getElementById("b").innerHTML="GÜNDÜZ";
+      document.getElementById("b").style.background ="aqua";
+      durum=1;
+    }else if(durum==1){
+      document.getElementById("d").style.background="aqua";
+      document.getElementById("b").innerHTML="GECE";
+      document.getElementById("b").style.background ="navy";
+      durum=0;
+    }
+  }
+</script>
+
+</body>
+</html>

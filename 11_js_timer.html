@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+  <style>
+    body{
+      text-align: center;
+      font-size: 20px;
+    }
+    #d{
+      margin:auto;
+      width: 300px;
+      height: 300px;
+      horiz-align: center;
+      vertical-align: center;
+      border : 3px solid gray;
+    }
+    #p{
+      font-size: 72px;
+    }
+    button{
+      font-size: 20px;
+      padding: 3px;
+      border : 3px solid gray;
+    }
+  </style>
+</head>
+<body>
+<h2>TIMER</h2>
+<div id="d">
+  <p id="p">30</p>
+</div>
+<br><br>
+<button onclick="basla()">BAŞLA</button>
+
+<script>
+  var kalan = 30;
+  var element = document.getElementById("p");
+
+  function basla(){
+    var timerId = setInterval(countdown,1000);
+  }
+
+  function countdown(){
+    if(kalan == -1){
+      clearTimeout(timerId)
+    } else{
+      element.innerHTML = kalan;
+      kalan--;
+      var rst = Math.floor(Math.random()*16777215); <!-- #FFFFFF -> 16777215 -->
+      var randomColor = rst.toString(16);
+      var ngtf = (16777215 - rst).toString(16);
+      document.getElementById("d").style.background = "#" + randomColor;
+      document.getElementById("p").style.color = "#" + ngtf;
+
+    }
+  }
+
+
+</script>
+
+</body>
+</html>
