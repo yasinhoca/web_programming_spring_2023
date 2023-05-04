@@ -1,0 +1,19 @@
+{
+  "ogrenciler": [
+    {
+      "isim": "Sercan",
+      "derskodu": 5061,
+      "dersadi": "oyun programcılığı"
+    },
+    {
+      "isim": "Onur",
+      "derskodu": 5062,
+      "dersadi": "mobil programlama"
+    },
+    {
+      "isim": "Oğuzhan",
+      "derskodu": 5063,
+      "dersadi": "xml ve web servisleri"
+    }
+  ]
+}

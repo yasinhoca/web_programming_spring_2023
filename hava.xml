@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<turkiye>
+   <sehir>
+       <isim>İstanbul</isim>
+       <tarih>04.05.2023</tarih>
+       <enyuksek>19</enyuksek>
+       <endusuk>7</endusuk>
+       <hava>Bulutlu</hava>
+   </sehir>
+    <sehir>
+        <isim>Ankara</isim>
+        <tarih>04.05.2023</tarih>
+        <enyuksek>16</enyuksek>
+        <endusuk>5</endusuk>
+        <hava>Bulutlu</hava>
+    </sehir>
+    <sehir>
+        <isim>İzmir</isim>
+        <tarih>04.05.2023</tarih>
+        <enyuksek>23</enyuksek>
+        <endusuk>9</endusuk>
+        <hava>Açık</hava>
+    </sehir>
+    <sehir>
+        <isim>Bursa</isim>
+        <tarih>04.05.2023</tarih>
+        <enyuksek>20</enyuksek>
+        <endusuk>6</endusuk>
+        <hava>Açık</hava>
+    </sehir>
+    <sehir>
+        <isim>Konya</isim>
+        <tarih>04.05.2023</tarih>
+        <enyuksek>16</enyuksek>
+        <endusuk>6</endusuk>
+        <hava>Bulutlu</hava>
+    </sehir>
+</turkiye>
